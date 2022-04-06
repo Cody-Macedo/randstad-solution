@@ -12,10 +12,10 @@ const BottomNav = () => {
     }
     return (
         <div className="bottom-nav">
-            <Link to="/homeapp">  <ButtonBottomNav img={home} title={"accueil"}/></Link>
+            <Link to="/app">  <ButtonBottomNav img={home} title={"accueil"}/></Link>
 
 
-            <ButtonBottomNav img={search} title={"offre"}/>
+            <Link to="/app/offer"> <ButtonBottomNav img={search} title={"offre"}/></Link>
             <ButtonBottomNav img={account} title={"carrière"}/>
             <ButtonBottomNav img={briefcase} title={"profil"}/>
         </div>

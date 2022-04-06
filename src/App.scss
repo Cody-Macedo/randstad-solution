@@ -28,14 +28,42 @@ body {
 }
 
 
-.card{
+.card {
   padding: 20px !important;
   margin-bottom: 25px;
-  h4{
+
+  h4 {
     font-weight: bold;
   }
+
   background: $white;
-  .card-content{
+
+  .card-content {
+    background: $background;
+    padding-bottom: 90px;
+  }
+}
+
+.section-presentation {
+  display: grid;
+  margin-bottom: 110px;
+
+  .card-presentation:first-child {
+    margin-top: 245px;
+  }
+}
+
+.card-presentation {
+  padding: 20px !important;
+  margin-bottom: 25px;
+
+  h4 {
+    font-weight: bold;
+  }
+
+  background: $white;
+
+  .card-content {
     background: $background;
     padding-bottom: 90px;
   }
@@ -47,6 +75,21 @@ MAIN APP
 .main-app {
   margin-top: 20px;
   margin-bottom: 105px;
+}
+
+.section {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-bottom: solid #E8EDF1;
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    margin-left: auto;
+  }
 }
 
 
@@ -82,6 +125,49 @@ TOPBAR NAV
 
   .notification {
     margin-left: auto;
+  }
+}
+
+.topbar-offer {
+  background-image: url(assets/img/backgroundblurred.png);
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: fixed;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .topbar-info {
+    color: $white;
+
+    img {
+      display: initial;
+    }
+
+    text-align: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .bottom-info {
+      display: flex;
+      justify-content: center;
+
+      p {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: 300;
+        font-size: 11px;
+      }
+    }
   }
 }
 
