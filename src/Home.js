@@ -1,10 +1,13 @@
 import React from 'react';
 import marker from "./assets/svg/default/marker.svg";
+import Header from "./Header";
+import Footer from "./Footer";
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
-            <p style={{marginBottom: '40%'}}></p>
+            <Header/>
             {/*<div className="grid grid-cols-1 m:grid-cols-3 mb-l">*/
             }
             {/*    <div className="bg-brand-secondary rounded text-white text-center p-s">*/
@@ -162,6 +165,14 @@ const Home = () => {
             }
             {/*</div>*/
             }
+
+            <div>
+                <Link to="/app" className="button button--m button--plain button--dark-blue">Go to App</Link>
+                <Link to="/terminal" className="button button--m button--plain button--dark-blue">Go to Terminal</Link>
+            </div>
+
+
+            <Footer/>
         </div>
     )
         ;

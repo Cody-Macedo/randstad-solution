@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+#Json Server
+
+```
+json-server --watch db.json --port 3004
+```
+
+#Nocodb
+
+```
+https://randstad-solution.herokuapp.com/nc/randstad_soluction_ydx1/api/v1/[table_name]
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

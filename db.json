@@ -1,9 +1,68 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "questions": [
+    {
+      "id": 1,
+      "title": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis?",
+      "answers": [
+        {
+          "id": 1,
+          "libelle": "Cupcake ipsum dolor."
+        },
+        {
+          "id": 2,
+          "libelle": "consectetur adipiscing elit."
+        },
+        {
+          "id": 3,
+          "libelle": "dolore eu fugiat nulla pariatur."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "2Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis?",
+      "answers": [
+        {
+          "id": 1,
+          "libelle": "Cupcake ipsum dolor."
+        },
+        {
+          "id": 2,
+          "libelle": "consectetur adipiscing elit."
+        },
+        {
+          "id": 3,
+          "libelle": "dolore eu fugiat nulla pariatur."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "3Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis?",
+      "answers": [
+        {
+          "id": 1,
+          "libelle": "Cupcake ipsum dolor."
+        },
+        {
+          "id": 2,
+          "libelle": "consectetur adipiscing elit."
+        },
+        {
+          "id": 3,
+          "libelle": "dolore eu fugiat nulla pariatur."
+        }
+      ]
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
