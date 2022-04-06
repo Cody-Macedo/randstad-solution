@@ -1,5 +1,11 @@
+$white: #FFFFFF;
+$grey: #697D95;
+$grey-light: rgba(105, 125, 149, 0.16);
+$blue: #2175D9;
+$background: #F4F7FC;
 body {
   margin: 0;
+  background: $background;
 }
 
 .form-group {
@@ -8,7 +14,114 @@ body {
 
 }
 
-.question{
+.question {
   margin-bottom: 40px;
   //margin-top: 30px;
+}
+
+.container {
+  padding-right: 25px;
+  padding-left: 25px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.card{
+  padding: 20px !important;
+  margin-bottom: 25px;
+  h4{
+    font-weight: bold;
+  }
+  background: $white;
+  .card-content{
+    background: $background;
+    padding-bottom: 90px;
+  }
+}
+
+/*
+MAIN APP
+ */
+.main-app {
+  margin-top: 20px;
+  margin-bottom: 105px;
+}
+
+
+/*
+TOPBAR NAV
+ */
+.topbar {
+  display: flex;
+  vertical-align: middle;
+  margin-top: 25px;
+  align-items: center;
+  //position: fixed;
+  //width:85%;
+
+  img {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-family: 'Graphik';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+  }
+
+  .notification {
+    margin-left: auto;
+  }
+}
+
+/*
+BOTTOM NAV
+ */
+
+.bottom-nav {
+  background: $white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  border-top: solid #E8EDF1;
+}
+
+.button-nav {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $grey;
+  padding: 5px;
+  width: 100px;
+
+  img {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  //&:hover {
+  //  background: $grey-light;
+  //  border-radius: 15px;
+  //}
 }

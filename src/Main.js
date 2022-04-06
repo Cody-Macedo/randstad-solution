@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <Routes>
             <Route path="test" element={<Test/>}/>
-            <Route path="app" element={<AppMobile/>}/>
+            <Route path="app/*" element={<AppMobile/>}/>
             <Route path="terminal" element={<Terminal/>}/>
             <Route path="/" element={<Home/>}/>
         </Routes>
