@@ -166,9 +166,9 @@ const Home = () => {
             {/*</div>*/
             }
 
-            <div>
-                <Link to="/app" className="button button--m button--plain button--dark-blue">Go to App</Link>
-                <Link to="/terminal" className="button button--m button--plain button--dark-blue">Go to Terminal</Link>
+            <div className="home-redirection">
+                <Link to="/app" className="button button--m button--dark-blue">Go to App</Link>
+                <Link to="/terminal" className="button button--m button--dark-blue">Go to Terminal</Link>
             </div>
 
 

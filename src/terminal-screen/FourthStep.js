@@ -2,9 +2,10 @@ import React, {useEffect, useState} from 'react';
 import fourthStep from "../assets/svg/fourth-step.svg";
 import CardButton from "./CardButton";
 import octopusSkew from "../assets/svg/ely/ely-octopus-skew.svg";
+import nbPerson from "../assets/svg/nb_person.svg";
 import {Slider} from "@mui/material";
 
-const FourthStep = ({handleNextStep,handlePreviousStep}) => {
+const FourthStep = ({handleNextStep, handlePreviousStep}) => {
 
     const [jobRythmes, setJobRythmes] = useState([])
 
@@ -46,23 +47,27 @@ const FourthStep = ({handleNextStep,handlePreviousStep}) => {
             <div>
                 <div className="container step">
                     <img className="center-image" src={fourthStep} alt="fourth step"/>
-                    <h2>Et ton rythme de travail dans tout ça ?</h2>
+                    <h2>Quelle est ta taille d’entreprise idéale ?</h2>
+                    <div className="slider-section">
+                        <img className="center-image" src={nbPerson} alt="fourth step" width={400}/>
 
-                    <Slider
-                        className="slider"
-                        aria-label="Number"
-                        defaultValue={0}
-                        step={125}
-                        marks={marks}
-                        min={0}
-                        max={500}
-                    />
+                        <Slider
+                            className="slider"
+                            aria-label="Number"
+                            defaultValue={0}
+                            step={125}
+                            marks={marks}
+                            min={0}
+                            max={500}
+                        />
+                    </div>
 
-                    <div className="bubble-info card        ">
-                        <p>Il me tient à coeur de te proposer un environnement dans lequel tu pourras t’épanouir </p>
+                    <div className="bubble-info card fourth-step">
+                        <p>L'union fait la force !</p>
                         <img className="bubble-illustration" src={octopusSkew} alt="octopus"/>
                     </div>
                     <span onClick={() => handlePreviousStep()}>précédent</span>
+                    <button className="btn-blue" onClick={() => handleNextStep()}>Suivant</button>
                 </div>
             </div>
         </div>

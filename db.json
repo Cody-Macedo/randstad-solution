@@ -113,17 +113,17 @@
     {
       "id": 1,
       "title": "Full TT",
-      "img": "/assets/svg/value/team-work.svg"
+      "img": "/assets/svg/rythme/fullTT.svg"
     },
     {
       "id": 2,
       "title": "Hybride",
-      "img": "/assets/svg/value/innovation.svg"
+      "img": "/assets/svg/rythme/hybride.svg"
     },
     {
       "id": 3,
       "title": "Full Présentiel",
-      "img": "/assets/svg/value/ecologie.svg"
+      "img": "/assets/svg/rythme/full-presentiel.svg"
     }
   ]
 }

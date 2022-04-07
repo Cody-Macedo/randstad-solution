@@ -75,26 +75,33 @@ body {
 
 
 }
+
 .bubble-info {
   margin: 60px;
   border-radius: 10px !important;
 }
-.fourth-step{
+
+.fourth-step {
   margin-top: 200px;
 }
+
 .section-presentation {
   display: grid;
   margin-bottom: 110px;
 
   .card-presentation:first-child {
-    margin-top: 245px;
+    margin-top: 275px;
   }
 }
 
-.slider{
+.slider {
   margin: 20px;
   margin-bottom: 80px;
-  margin-top: 0px !important;
+  margin-top: 0 !important;
+}
+
+.slider-section {
+  margin-top: 80px;
 }
 
 .card-presentation {
@@ -191,10 +198,8 @@ TOPBAR NAV
 }
 
 .topbar-offer {
-  background-image: url(assets/img/backgroundblurred.png);
-  background-position: center top;
+  background: #144682;
   background-size: 100% auto;
-  background-repeat: no-repeat;
   width: 100%;
   position: fixed;
   padding-left: 20px;
@@ -273,6 +278,15 @@ BOTTOM NAV
   //}
 }
 
+.home-redirection{
+  display: flex;
+  justify-content:center;
+  margin-top: 30%;
+  margin-bottom: 30%;
+  a{
+    margin: 10px;
+  }
+}
 /*
 HOME TERMINAL
  */
@@ -327,8 +341,26 @@ HOME TERMINAL
   span {
     text-decoration: underline;
     color: $black;
-    margin-top: 100px;
+    //margin-top: 100px;
   }
+
+  h2 {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 40px;
+  }
+}
+
+.btn-blue {
+  background: #2175D9;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 40px;
 }
 
 .container-choice {

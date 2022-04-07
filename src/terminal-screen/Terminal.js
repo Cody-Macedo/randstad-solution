@@ -14,7 +14,7 @@ const Terminal = () => {
     const nextStep = () => {
         // step = step + 1
         console.log(step)
-        if (step > 7) {
+        if (step > 6) {
             setStep(1)
         } else {
             setStep(step + 1)
@@ -43,8 +43,6 @@ const Terminal = () => {
             case 5:
                 return <FourthStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
             case 6:
-                return <FifthStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
-            case 7:
                 return <LastStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
             default:
                 return <HomeTerminal handleNextStep={nextStep}/>
