@@ -58,22 +58,72 @@
   "job_type": [
     {
       "id": 1,
-      "title": "CDD"
+      "title": "CDD",
+      "img": "/assets/svg/ely/ely-chenille.svg"
     },
     {
       "id": 2,
-      "title": "CDI"
+      "title": "CDI",
+      "img": "/assets/svg/ely/ely-dog.svg"
     },
     {
       "id": 3,
-      "title": "Stage"
+      "title": "Stage",
+      "img": "/assets/svg/ely/ely-pioupiou.svg"
     },
     {
       "id": 4,
-      "title": "Interim"
+      "title": "Interim",
+      "img": "/assets/svg/ely/ely-octopus.svg"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "job_value": [
+    {
+      "id": 1,
+      "title": "esprit d'équipe",
+      "img": "/assets/svg/value/team-work.svg"
+    },
+    {
+      "id": 2,
+      "title": "innovation",
+      "img": "/assets/svg/value/innovation.svg"
+    },
+    {
+      "id": 3,
+      "title": "écologie",
+      "img": "/assets/svg/value/ecologie.svg"
+    },
+    {
+      "id": 4,
+      "title": "technologie",
+      "img": "/assets/svg/value/technologie.svg"
+    },
+    {
+      "id": 5,
+      "title": "bénéfice",
+      "img": "/assets/svg/value/benefice.svg"
+    },
+    {
+      "id": 6,
+      "title": "créativité",
+      "img": "/assets/svg/value/creativity.svg"
+    }
+  ],
+  "job_rythme": [
+    {
+      "id": 1,
+      "title": "Full TT",
+      "img": "/assets/svg/value/team-work.svg"
+    },
+    {
+      "id": 2,
+      "title": "Hybride",
+      "img": "/assets/svg/value/innovation.svg"
+    },
+    {
+      "id": 3,
+      "title": "Full Présentiel",
+      "img": "/assets/svg/value/ecologie.svg"
+    }
+  ]
 }

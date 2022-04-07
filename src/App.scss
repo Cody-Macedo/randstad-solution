@@ -4,6 +4,7 @@ $grey-light: rgba(105, 125, 149, 0.16);
 $blue: #2175D9;
 $background: #F4F7FC;
 $black: #0F1941;
+$yellow: #FFB511;
 body {
   margin: 0;
   background: $background;
@@ -30,10 +31,21 @@ body {
 }
 
 .card-button {
-  padding: 20px !important;
-  margin-bottom: 25px;
+  width: 160px;
+  height: 152px;
+  padding: 15px !important;
+  margin-bottom: 30px;
   background: $white;
   border-radius: 6px;
+
+  img {
+    margin-top: -45px;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .card {
@@ -44,14 +56,32 @@ body {
     font-weight: bold;
   }
 
+  p {
+    margin-bottom: 0;
+  }
+
   background: $white;
 
   .card-content {
     background: $background;
     padding-bottom: 90px;
   }
-}
 
+  .bubble-illustration {
+    position: absolute;
+    right: 0;
+    margin-top: -30px;
+  }
+
+
+}
+.bubble-info {
+  margin: 60px;
+  border-radius: 10px !important;
+}
+.fourth-step{
+  margin-top: 200px;
+}
 .section-presentation {
   display: grid;
   margin-bottom: 110px;
@@ -59,6 +89,12 @@ body {
   .card-presentation:first-child {
     margin-top: 245px;
   }
+}
+
+.slider{
+  margin: 20px;
+  margin-bottom: 80px;
+  margin-top: 0px !important;
 }
 
 .card-presentation {
@@ -246,13 +282,37 @@ HOME TERMINAL
   font-weight: 400;
   font-size: 18px;
   padding: 40px;
+  background: #144682;
+  min-height: 100vh;
 
   h2 {
     margin-top: 40px;
+    font-size: 22px;
+    color: $yellow;
   }
 
   img {
     margin: 90px auto auto;
+  }
+
+  .logo-top {
+    img {
+      margin: 0 10px 0 0;
+      font-weight: 400;
+      font-size: 32px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 24px;
+      color: $yellow;
+      margin-top: 3px;
+    }
+
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
   }
 }
 
@@ -260,21 +320,29 @@ HOME TERMINAL
   text-align: center;
   margin-top: 50px;
 
-  img {
+  .center-image {
     margin: auto auto 50px;
   }
 
-  p {
+  span {
     text-decoration: underline;
+    color: $black;
+    margin-top: 100px;
   }
 }
 
 .container-choice {
-  display: flex;
+  display: grid;
   justify-content: center;
-  margin-top: 90px;
+  justify-items: center;
+}
 
-  .card-button {
-    margin: 20px;
-  }
+.grid-3 {
+  margin: 154px 18px 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  margin: 90px 90px 40px;
+  grid-template-columns: repeat(2, 1fr);
 }
