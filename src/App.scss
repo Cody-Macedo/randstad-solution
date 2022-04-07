@@ -2,6 +2,7 @@ $white: #FFFFFF;
 $grey: #697D95;
 $grey-light: rgba(105, 125, 149, 0.16);
 $blue: #2175D9;
+$blue-dark: #144682;
 $background: #F4F7FC;
 $black: #0F1941;
 $yellow: #FFB511;
@@ -76,6 +77,28 @@ body {
 
 }
 
+.card-suggestion {
+  padding: 20px !important;
+  margin-bottom: 25px;
+
+  h4 {
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  background: $white;
+
+  .card-content {
+    background: $background;
+    padding-bottom: 90px;
+  }
+
+
+}
+
 .bubble-info {
   margin: 60px;
   border-radius: 10px !important;
@@ -133,7 +156,7 @@ MAIN APP
 .all-app {
   a {
     text-decoration: none;
-    color: $black !important;
+    color: $black;
 
     &:hover {
       text-decoration: none;
@@ -238,6 +261,25 @@ TOPBAR NAV
   }
 }
 
+.topbar-option {
+  padding-top: 80px;
+  background: $blue-dark;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 12px 16px;
+    color: $white;
+  }
+}
+
+.selected-option{
+  box-shadow: inset 0px -2px 0px #FFB511;
+}
+
 /*
 BOTTOM NAV
  */
@@ -278,15 +320,17 @@ BOTTOM NAV
   //}
 }
 
-.home-redirection{
+.home-redirection {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-top: 30%;
   margin-bottom: 30%;
-  a{
+
+  a {
     margin: 10px;
   }
 }
+
 /*
 HOME TERMINAL
  */
