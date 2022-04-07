@@ -55,11 +55,22 @@
       ]
     }
   ],
-  "comments": [
+  "job_type": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "CDD"
+    },
+    {
+      "id": 2,
+      "title": "CDI"
+    },
+    {
+      "id": 3,
+      "title": "Stage"
+    },
+    {
+      "id": 4,
+      "title": "Interim"
     }
   ],
   "profile": {

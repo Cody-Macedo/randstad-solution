@@ -3,10 +3,12 @@ $grey: #697D95;
 $grey-light: rgba(105, 125, 149, 0.16);
 $blue: #2175D9;
 $background: #F4F7FC;
+$black: #0F1941;
 body {
   margin: 0;
   background: $background;
 }
+
 
 .form-group {
   text-align: center;
@@ -27,6 +29,12 @@ body {
   margin-left: auto;
 }
 
+.card-button {
+  padding: 20px !important;
+  margin-bottom: 25px;
+  background: $white;
+  border-radius: 6px;
+}
 
 .card {
   padding: 20px !important;
@@ -61,6 +69,13 @@ body {
     font-weight: bold;
   }
 
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+  }
+
   background: $white;
 
   .card-content {
@@ -72,6 +87,17 @@ body {
 /*
 MAIN APP
  */
+.all-app {
+  a {
+    text-decoration: none;
+    color: $black !important;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .main-app {
   margin-top: 20px;
   margin-bottom: 105px;
@@ -183,7 +209,6 @@ BOTTOM NAV
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
-  margin-bottom: 5px;
   border-top: solid #E8EDF1;
 }
 
@@ -210,4 +235,46 @@ BOTTOM NAV
   //  background: $grey-light;
   //  border-radius: 15px;
   //}
+}
+
+/*
+HOME TERMINAL
+ */
+
+.home-terminal {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 40px;
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  img {
+    margin: 90px auto auto;
+  }
+}
+
+.step {
+  text-align: center;
+  margin-top: 50px;
+
+  img {
+    margin: auto auto 50px;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+}
+
+.container-choice {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+
+  .card-button {
+    margin: 20px;
+  }
 }

@@ -9,7 +9,7 @@ import Home from "../Home";
 
 const AppMobile = () => {
     return (
-        <div>
+        <div className="all-app">
             <MainApp/>
             <BottomNav/>
         </div>

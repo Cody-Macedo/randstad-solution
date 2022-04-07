@@ -4,9 +4,9 @@ const Card = () => {
     return (
         <div className="card-presentation">
             <h4> Card Title</h4>
-            <div className="card-content">
-                eee
-            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi erat, pharetra sit amet lectus nec, rhoncus faucibus orci. Maecenas in accumsan eros. Donec condimentum lectus nibh.
+            </p>
         </div>
     );
 };

@@ -1,39 +1,59 @@
 import React, {useEffect, useState} from 'react';
 import Question from "./Question";
+import HomeTerminal from "./HomeTerminal";
+import FirstStep from "./FirstStep";
+import SecondStep from "./SecondStep";
+import ThirdStep from "./ThirdStep";
+import FourthStep from "./FourthStep";
+import FifthStep from "./FifthStep";
+import LastStep from "./LastStep";
 
 const Terminal = () => {
 
-    const [questions, setQuestions] = useState([])
-
-    useEffect(() => {
-
-        const fetchTodos = async () => {
-            const res = await fetch('http://localhost:3004/questions')
-            const data = await res.json()
-            // console.log(data)
-            setQuestions(data)
+    let [step, setStep] = useState(1)
+    const nextStep = () => {
+        // step = step + 1
+        console.log(step)
+        if (step > 7) {
+            setStep(1)
+        } else {
+            setStep(step + 1)
         }
+    }
 
-        fetchTodos()
+    const previousStep = () => {
+        console.log(step)
+        if (step < 1) {
+            setStep(1)
+        } else {
+            setStep(step - 1)
+        }
+    }
 
-    }, [])
-
-    const handleAnswer = (txt) => {
-        console.log(txt);
+    function SwitchCase() {
+        switch (step) {
+            case 1:
+                return <HomeTerminal handleNextStep={nextStep}/>
+            case 2:
+                return <FirstStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
+            case 3:
+                return <SecondStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
+            case 4:
+                return <ThirdStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
+            case 5:
+                return <FourthStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
+            case 6:
+                return <FifthStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
+            case 7:
+                return <LastStep handleNextStep={nextStep} handlePreviousStep={previousStep}/>
+            default:
+                return <HomeTerminal handleNextStep={nextStep}/>
+        }
     }
 
     return (
         <div className="terminal">
-            <div className="block">
-                <div className="block__wrapper wrapper">
-                    <div className="block__content">
-                        <div className="form-group form-group--selection-control">
-                            {questions.map((question) => <Question key={question.id} answerDone={handleAnswer} title={question.title}
-                                                                   answers={question.answers}/>)}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <SwitchCase/>
         </div>
     );
 };
