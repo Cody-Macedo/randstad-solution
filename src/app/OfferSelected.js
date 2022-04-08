@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBarOffer from "./TopBarOffer";
 import CardPresentation from "./CardPresentation";
+import TopBarOptionPostuler from "./TopBarOptionPostuler";
 
 const OfferSelected = () => {
     return (
@@ -8,9 +9,6 @@ const OfferSelected = () => {
             <TopBarOffer/>
             <div className="container">
                 <div className="section-presentation">
-                    <CardPresentation/>
-                    <CardPresentation/>
-                    <CardPresentation/>
                     <CardPresentation/>
                 </div>
             </div>

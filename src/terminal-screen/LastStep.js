@@ -9,7 +9,7 @@ const LastStep = ({handleNextStep,handlePreviousStep}) => {
             <div>
                 <div className="container step">
                     <img className="center-image" src={lastStep} alt="last step"/>
-                    <h2>Scan ce QR Code pour découvrir ta sélection personnalisée</h2>
+                    <h2>Télécharge Randstad Ely puis scan ce QR Code pour découvrir ta sélection personnalisée !</h2>
                     <div className="container-choice">
                         <img className="center-image" src={qrcode} alt="qrcode" width="300"/>
                     </div>
